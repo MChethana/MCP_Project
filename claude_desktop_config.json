@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "amazon-uk-ecommerce": {
+      "command": "C:\\Users\\I072670\\Desktop\\27_11_2024\\AI_Class\\MCP_Project\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\I072670\\Desktop\\27_11_2024\\AI_Class\\MCP_Project\\amazon_uk_simple_mcp_server.py"
+      ],
+      "cwd": "C:\\Users\\I072670\\Desktop\\27_11_2024\\AI_Class\\MCP_Project",
+      "env": {}
+    }
+  }
+}
