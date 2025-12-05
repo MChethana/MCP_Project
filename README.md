@@ -7,9 +7,9 @@ Research on e-commerce application
 2. Dataset download
    Amazon UK Dataset (2.2M products)
 
-   URL: https://www.kaggle.com/datasets/asaniczka/amazon-uk-products-dataset-2023
+   URL: https://www.kaggle.com/datasets/asaniczka/amazon-uk-products-dataset-2023 ,
    Download and save as: data/amazon_products.csv
 
-3.Execute the database setup to create the database
+3. Execute the database setup to create the database
 
-4.Need licensce key for the agentic AI setup and not needed for basic MCP setup
+4. Need licensce key for the agentic AI setup and not needed for basic MCP setup
