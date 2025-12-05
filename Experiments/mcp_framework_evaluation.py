@@ -287,29 +287,7 @@ def evaluate_mcp_framework():
         print(f"  {component}: {score:.1f}% (weight: {weight:.1f})")
     
     print(f"\n🎯 OVERALL FRAMEWORK SCORE: {weighted_total:.1f}%")
-    
-    # Final recommendations
-    print("\n🔧 FRAMEWORK IMPROVEMENT RECOMMENDATIONS:")
-    print("\n🚨 Critical Issues:")
-    print("  1. Fix Pydantic annotation compatibility with FastMCP")
-    print("  2. Consider alternative return type annotations")
-    print("  3. Test framework compatibility before deployment")
-    
-    print("\n⚡ Performance Improvements:")
-    print("  1. Implement connection pooling instead of global connection")
-    print("  2. Add caching layer for expensive operations")
-    print("  3. Consider async/await for better concurrency")
-    
-    print("\n🔐 Security Enhancements:")
-    print("  1. Add rate limiting for tools")
-    print("  2. Implement input sanitization")
-    print("  3. Add authentication/authorization if needed")
-    
-    print("\n📝 Code Quality:")
-    print("  1. Add comprehensive type hints")
-    print("  2. Improve error messages")
-    print("  3. Add unit tests for each tool")
-    
+       
     if weighted_total >= 80:
         print(f"\n🟢 CONCLUSION: Good framework implementation with minor issues to address")
     elif weighted_total >= 60:
@@ -321,3 +299,4 @@ def evaluate_mcp_framework():
 
 if __name__ == "__main__":
     evaluate_mcp_framework()
+
