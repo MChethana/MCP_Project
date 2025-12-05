@@ -1,0 +1,9 @@
+numpy
+pandas
+mcp[cli]
+flask==3.0.0
+flask-cors==4.0.0
+anthropic==0.18.0
+generative-ai-hub-sdk
+ai-core-sdk
+ai-api-client-sdk
