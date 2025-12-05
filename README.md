@@ -1,5 +1,5 @@
 # MCP_Project
-Research on e-commerce application
+Research on e-commerce application and implementation
 
 # Prerequicite
 1. Install requirements
