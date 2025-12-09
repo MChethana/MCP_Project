@@ -1,0 +1,667 @@
+
+ROUGE EVALUATION REPORT - MCP SERVER
+=====================================
+
+EVALUATION OVERVIEW
+-------------------
+• Total Test Cases: 8
+• System Type: Live MCP Server
+• Evaluation Date: 2025-12-07 22:26:21
+
+AGGREGATE ROUGE SCORES
+----------------------
+ROUGE-1 F1-Score:
+  • Mean: 0.2915
+  • Median: 0.2153
+  • Std Dev: 0.2381
+  • Range: 0.0211 - 0.6190
+
+ROUGE-2 F1-Score:
+  • Mean: 0.1233
+  • Median: 0.0574
+  • Std Dev: 0.1253
+  • Range: 0.0000 - 0.3000
+
+ROUGE-L F1-Score:
+  • Mean: 0.2550
+  • Median: 0.1969
+  • Std Dev: 0.1993
+  • Range: 0.0211 - 0.4928
+
+PERFORMANCE METRICS
+-------------------
+Response Generation Time:
+  • Mean: 3.538s
+  • Median: 0.095s
+  • Total: 28.307s
+
+DETAILED RESULTS BY CATEGORY
+-----------------------------
+
+SEARCH (1 test cases):
+  • ROUGE-1: 0.1549
+  • ROUGE-2: 0.0439
+  • ROUGE-L: 0.1380
+
+PRODUCT_DETAILS (1 test cases):
+  • ROUGE-1: 0.0211
+  • ROUGE-2: 0.0000
+  • ROUGE-L: 0.0211
+
+CATEGORIES (1 test cases):
+  • ROUGE-1: 0.4928
+  • ROUGE-2: 0.2059
+  • ROUGE-L: 0.4928
+
+RECOMMENDATIONS (1 test cases):
+  • ROUGE-1: 0.0421
+  • ROUGE-2: 0.0215
+  • ROUGE-L: 0.0421
+
+STATISTICS (1 test cases):
+  • ROUGE-1: 0.5714
+  • ROUGE-2: 0.3000
+  • ROUGE-L: 0.4762
+
+COMPLEX_SEARCH (1 test cases):
+  • ROUGE-1: 0.1655
+  • ROUGE-2: 0.0494
+  • ROUGE-L: 0.1566
+
+GLOBAL_STATISTICS (1 test cases):
+  • ROUGE-1: 0.6190
+  • ROUGE-2: 0.3000
+  • ROUGE-L: 0.4762
+
+PRICE_RANGE (1 test cases):
+  • ROUGE-1: 0.2651
+  • ROUGE-2: 0.0654
+  • ROUGE-L: 0.2372
+
+MCP SERVER TOOL ANALYSIS
+-------------------------
+Tool Performance Summary:
+
+• search_products: ROUGE-1 F1 = 0.1952 (3 test cases)
+• get_product_details: ROUGE-1 F1 = 0.0211 (1 test cases)
+• get_categories: ROUGE-1 F1 = 0.4928 (1 test cases)
+• get_recommendations: ROUGE-1 F1 = 0.0421 (1 test cases)
+• get_price_statistics: ROUGE-1 F1 = 0.5952 (2 test cases)
+
+INTERPRETATION GUIDELINES
+-------------------------
+ROUGE Score Ranges:
+  • 0.0 - 0.2: Poor overlap with reference
+  • 0.2 - 0.4: Fair overlap, basic content matching
+  • 0.4 - 0.6: Good overlap, solid content alignment
+  • 0.6 - 0.8: Very good overlap, high content similarity
+  • 0.8 - 1.0: Excellent overlap, near-identical content
+
+MCP Server Specific Metrics:
+  • JSON Structure Consistency
+  • Parameter Handling Accuracy
+  • Data Retrieval Performance
+  • Response Format Standardization
+
+DETAILED TEST CASE RESULTS
+---------------------------
+
+Test Case 1: Product search with price filter (search)
+Tool: search_products
+Parameters: {"query": "wireless headphones", "max_price": 100, "limit": 5}
+ROUGE Scores: R-1=0.155, R-2=0.044, R-L=0.138
+Generation Time: 1.463s
+
+Generated Response:
+{
+  "query": "wireless headphones",
+  "result_count": 5,
+  "products": [
+    {
+      "id": 1119148,
+      "asin": "B0CG6N9LGR",
+      "title": "White Cat Ear Wireless Bluetooth LED Headphones, Kids wireless headphones, Childrens wireless headphones, Kids bluetooth earphones, Collapsible wireless headphones, Wireless headphones with microphone",
+      "price": 17.99,
+      "rating": 0.0,
+      "num_ratings": 0,
+      "category": "Headphones & Earphones",
+      "url": "https://m.media-amazon.com/images/I/41l54xFCf8L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41l54xFCf8L._AC_UL320_.jpg",
+      "description": "White Cat Ear Wireless Bluetooth LED Headphones, Kids wireless headphones, Childrens wireless headphones, Kids bluetooth earphones, Collapsible wireless headphones, Wireless headphones with microphone",
+      "created_at": "2025-11-30 17:49:27"
+    },
+    {
+      "id": 1566064,
+      "asin": "B0BZDTZXZH",
+      "title": "Hama Freedom Buddy Bluetooth Headphones (True Wireless, TWS, In-Ear Headphones, Wireless Headphones, Wireless Bass Boost, Wireless Headphones, Earbuds, Voice Control, with Charging Box) Green",
+      "price": 27.63,
+      "rating": 4.0,
+      "num_ratings": 2,
+      "category": "Headphones, Earphones & Accessories",
+      "url": "https://m.media-amazon.com/images/I/31LKflg0bQL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/31LKflg0bQL._AC_UL320_.jpg",
+      "description": "Hama Freedom Buddy Bluetooth Headphones (True Wireless, TWS, In-Ear Headphones, Wireless Headphones, Wireless Bass Boost, Wireless Headphones, Earbuds, Voice Control, with Charging Box) Green",
+      "created_at": "2025-11-30 17:51:08"
+    },
+    {
+      "id": 1566114,
+      "asin": "B0BZDVTJ7S",
+      "title": "Hama Bluetooth Headphones Freedom Buddy (True Wireless, TWS, In-Ear Headphones, Wireless Headphones, Wireless Bass Boost, Headphones Wireless, Earbuds, Voice Control, with Charging Box) Blue",
+      "price": 24.65,
+      "rating": 4.0,
+      "num_ratings": 2,
+      "category": "Headphones, Earphones & Accessories",
+      "url": "https://m.media-amazon.com/images/I/41sJZLHFJmL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/41sJZLHFJmL._AC_UL320_.jpg",
+      "description": "Hama Bluetooth Headphones Freedom Buddy (True Wireless, TWS, In-Ear Headphones, Wireless Headphones, Wireless Bass Boost, Headphones Wireless, Earbuds, Voice Control, with Charging Box) Blue",
+      "created_at": "2025-11-30 17:51:08"
+    },
+    {
+      "id": 1051477,
+      "asin": "B094W6J3RC",
+      "title": "HEALLILY Wireless Headphones Wireless Headphones 2 Pairs Radio Ear Mold Earmold Replacement Earpiece Insert for Acoustic Coil Tube Earbud M Size Headphones Wireless Headphones Wireless",
+      "price": 8.47,
+      "rating": 0.0,
+      "num_ratings": 0,
+      "category": "Radio Communication",
+      "url": "https://m.media-amazon.com/images/I/612LeJ0LVNL._AC_UY218_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/612LeJ0LVNL._AC_UY218_.jpg",
+      "description": "HEALLILY Wireless Headphones Wireless Headphones 2 Pairs Radio Ear Mold Earmold Replacement Earpiece Insert for Acoustic Coil Tube Earbud M Size Headphones Wireless Headphones Wireless",
+      "created_at": "2025-11-30 17:49:12"
+    },
+    {
+      "id": 950570,
+      "asin": "B09BVJ9ZRL",
+      "title": "DOITOOL Wireless Headphones Headphones Headband Wireless Sports Headband Earphone Noise Cancelling Sleeping Headphones Earbuds for Workout Running Yoga Travel Grey Headphones Wireless",
+      "price": 15.36,
+      "rating": 0.0,
+      "num_ratings": 0,
+      "category": "Sports & Outdoors",
+      "url": "https://m.media-amazon.com/images/I/81nyyyHeNIL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81nyyyHeNIL._AC_UL320_.jpg",
+      "description": "DOITOOL Wireless Headphones Headphones Headband Wireless Sports Headband Earphone Noise Cancelling Sleeping Headphones Earbuds for Workout Running Yoga Travel Grey Headphones Wireless",
+      "created_at": "2025-11-30 17:48:55"
+    }
+  ]
+}
+
+Reference Response:
+{
+  "query": "wireless headphones",
+  "result_count": 5,
+  "products": [
+    {
+      "id": 1,
+      "asin": "B08C4KWM9T",
+      "title": "Sony WH-CH720N Wireless Noise Canceling Headphones",
+      "price": 89.99,
+      "rating": 4.4,
+      "reviews": 15234,
+      "category": "Electronics > Audio > Headphones",
+      "availability": "In Stock"
+    },
+    {
+      "id": 2,
+      "asin": "B07S8VYV5K",
+      "title": "JBL Tune 510BT Wireless On-Ear Headphones",
+      "price": 39.99,
+      "rating": 4.3,
+      "reviews": 8762,
+      "category": "Electronics > Audio > Headphones",
+      "availability": "In Stock"
+    },
+    {
+      "id": 3,
+      "asin": "B0856JBVVF",
+      "title": "Anker Soundcore Life Q20 Hybrid Active Noise Cancelling Headphones",
+      "price": 59.99,
+      "rating": 4.2,
+      "reviews": 22145,
+      "category": "Electronics > Audio > Headphones",
+      "availability": "In Stock"
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+
+Test Case 2: Single product detail retrieval (product_details)
+Tool: get_product_details
+Parameters: {"asin": "B08C4KWM9T"}
+ROUGE Scores: R-1=0.021, R-2=0.000, R-L=0.021
+Generation Time: 0.000s
+
+Generated Response:
+{"error": "Product B08C4KWM9T not found"}
+
+Reference Response:
+{
+  "id": 1,
+  "asin": "B08C4KWM9T",
+  "title": "Sony WH-CH720N Wireless Noise Canceling Headphones",
+  "price": 89.99,
+  "rating": 4.4,
+  "reviews": 15234,
+  "category": "Electronics > Audio > Headphones",
+  "availability": "In Stock",
+  "description": "Experience premium sound quality with Sony's advanced noise canceling technology. Features 35-hour battery life, quick charge, and comfortable over-ear design perfect for long listening sessions.",
+  "features": [
+    "Active Noise Cancellation",
+    "35-hour battery life",
+    "Quick charge (3 min = 1 hour)",
+    "Wireless Bluetooth 5.0",
+    "Comfortable over-ear design"
+  ],
+  "dimensions": "7.87 x 2.76 x 9.84 inches",
+  "weight": "192g"
+}
+--------------------------------------------------------------------------------
+
+Test Case 3: Category listing with counts (categories)
+Tool: get_categories
+Parameters: {"limit": 10}
+ROUGE Scores: R-1=0.493, R-2=0.206, R-L=0.493
+Generation Time: 0.167s
+
+Generated Response:
+{
+  "total_categories": 10,
+  "categories": [
+    {
+      "category": "Sports & Outdoors",
+      "product_count": 826076
+    },
+    {
+      "category": "Skin Care",
+      "product_count": 18755
+    },
+    {
+      "category": "Fragrances",
+      "product_count": 18563
+    },
+    {
+      "category": "Make-up",
+      "product_count": 18453
+    },
+    {
+      "category": "Manicure & Pedicure Products",
+      "product_count": 17212
+    },
+    {
+      "category": "Handmade Clothing, Shoes & Accessories",
+      "product_count": 16707
+    },
+    {
+      "category": "Men",
+      "product_count": 16384
+    },
+    {
+      "category": "Women",
+      "product_count": 16284
+    },
+    {
+      "category": "Handmade Gifts",
+      "product_count": 15790
+    },
+    {
+      "category": "Handmade Artwork",
+      "product_count": 15297
+    }
+  ]
+}
+
+Reference Response:
+{
+  "total_categories": 10,
+  "categories": [
+    {
+      "category": "Electronics > Audio > Headphones",
+      "product_count": 2341
+    },
+    {
+      "category": "Electronics > Computers > Laptops",
+      "product_count": 1876
+    },
+    {
+      "category": "Electronics > Mobile > Smartphones",
+      "product_count": 1654
+    },
+    {
+      "category": "Home & Garden > Smart Home",
+      "product_count": 1432
+    },
+    {
+      "category": "Electronics > Gaming > Consoles",
+      "product_count": 987
+    },
+    {
+      "category": "Electronics > Audio > Speakers",
+      "product_count": 876
+    },
+    {
+      "category": "Electronics > Cameras > Digital",
+      "product_count": 743
+    },
+    {
+      "category": "Electronics > Tablets",
+      "product_count": 621
+    },
+    {
+      "category": "Electronics > Wearable Tech",
+      "product_count": 534
+    },
+    {
+      "category": "Home & Kitchen > Appliances",
+      "product_count": 456
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+
+Test Case 4: Product recommendations based on similarity (recommendations)
+Tool: get_recommendations
+Parameters: {"asin": "B08C4KWM9T", "limit": 3}
+ROUGE Scores: R-1=0.042, R-2=0.022, R-L=0.042
+Generation Time: 0.000s
+
+Generated Response:
+{"error": "Product B08C4KWM9T not found"}
+
+Reference Response:
+{
+  "source_product": "B08C4KWM9T",
+  "recommendation_count": 3,
+  "recommendations": [
+    {
+      "id": 4,
+      "asin": "B0856JBVVF",
+      "title": "Anker Soundcore Life Q20 Hybrid Active Noise Cancelling Headphones",
+      "price": 59.99,
+      "rating": 4.2,
+      "reviews": 22145,
+      "category": "Electronics > Audio > Headphones",
+      "availability": "In Stock"
+    },
+    {
+      "id": 5,
+      "asin": "B07S8VYV5K",
+      "title": "JBL Tune 510BT Wireless On-Ear Headphones",
+      "price": 39.99,
+      "rating": 4.3,
+      "reviews": 8762,
+      "category": "Electronics > Audio > Headphones",
+      "availability": "In Stock"
+    },
+    {
+      "id": 6,
+      "asin": "B08HMWZBXC",
+      "title": "Bose QuietComfort 35 II Wireless Bluetooth Headphones",
+      "price": 199.99,
+      "rating": 4.5,
+      "reviews": 18903,
+      "category": "Electronics > Audio > Headphones",
+      "availability": "In Stock"
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+
+Test Case 5: Price statistics for category (statistics)
+Tool: get_price_statistics
+Parameters: {"category": "headphones"}
+ROUGE Scores: R-1=0.571, R-2=0.300, R-L=0.476
+Generation Time: 12.507s
+
+Generated Response:
+{
+  "product_count": 13384,
+  "min_price": 0.01,
+  "max_price": 2059.0,
+  "avg_price": 38.56343395098625,
+  "avg_rating": 3.7714061566049013,
+  "category": "headphones"
+}
+
+Reference Response:
+{
+  "category": "headphones",
+  "product_count": 2341,
+  "min_price": 9.99,
+  "max_price": 549.99,
+  "avg_price": 87.45,
+  "avg_rating": 4.1
+}
+--------------------------------------------------------------------------------
+
+Test Case 6: Complex search with multiple filters (complex_search)
+Tool: search_products
+Parameters: {"query": "gaming laptop", "category": "laptops", "min_rating": 4.0, "sort_by": "rating", "limit": 3}
+ROUGE Scores: R-1=0.166, R-2=0.049, R-L=0.157
+Generation Time: 0.000s
+
+Generated Response:
+{
+  "query": "gaming laptop",
+  "result_count": 3,
+  "products": [
+    {
+      "id": 317367,
+      "asin": "B0C4FF66TX",
+      "title": "Acer Nitro 5 AN515-58 15.6-inch Gaming Laptop - (Intel Core i7-12650H, 16 GB RAM, 1 TB SSD, NVIDIA GeForce RTX 4060 8G, 1920 x 1080 144Hz Display, Windows 11, Black)",
+      "price": 1099.0,
+      "rating": 5.0,
+      "num_ratings": 2,
+      "category": "Laptops",
+      "url": "https://m.media-amazon.com/images/I/81tQqVir52L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81tQqVir52L._AC_UL320_.jpg",
+      "description": "Acer Nitro 5 AN515-58 15.6-inch Gaming Laptop - (Intel Core i7-12650H, 16 GB RAM, 1 TB SSD, NVIDIA GeForce RTX 4060 8G, 1920 x 1080 144Hz Display, Windows 11, Black)",
+      "created_at": "2025-11-30 17:47:02"
+    },
+    {
+      "id": 317484,
+      "asin": "B0BY1PQ9P8",
+      "title": "HoMei 64GB DDR5 RAM, 4TB M.2 PCIe SSD, 2TB HDD, 14 Cores 13th Gen Intel Core i9-13900H 5.40GHz Gaming Laptop, 17.3\" 2.5K QHD 165Hz Display, GeForce RTX 4070 8GB GDDR6 Dedicated Graphics",
+      "price": 2258.88,
+      "rating": 5.0,
+      "num_ratings": 2,
+      "category": "Laptops",
+      "url": "https://m.media-amazon.com/images/I/61KpHXHDIVL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/61KpHXHDIVL._AC_UL320_.jpg",
+      "description": "HoMei 64GB DDR5 RAM, 4TB M.2 PCIe SSD, 2TB HDD, 14 Cores 13th Gen Intel Core i9-13900H 5.40GHz Gaming Laptop, 17.3\" 2.5K QHD 165Hz Display, GeForce RTX 4070 8GB GDDR6 Dedicated Graphics",
+      "created_at": "2025-11-30 17:47:02"
+    },
+    {
+      "id": 317491,
+      "asin": "B0C4FFGTMW",
+      "title": "Acer Nitro 17 AN17-51 17.3-inch Gaming Laptop - (Intel Core i7-13700H, 16 GB RAM, 1 TB SSD, NVIDIA GeForce RTX 4060 8G, 2560 x 1440 165Hz Display, Windows 11, Black)",
+      "price": 1299.97,
+      "rating": 5.0,
+      "num_ratings": 1,
+      "category": "Laptops",
+      "url": "https://m.media-amazon.com/images/I/81ynJP6X5sL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81ynJP6X5sL._AC_UL320_.jpg",
+      "description": "Acer Nitro 17 AN17-51 17.3-inch Gaming Laptop - (Intel Core i7-13700H, 16 GB RAM, 1 TB SSD, NVIDIA GeForce RTX 4060 8G, 2560 x 1440 165Hz Display, Windows 11, Black)",
+      "created_at": "2025-11-30 17:47:02"
+    }
+  ]
+}
+
+Reference Response:
+{
+  "query": "gaming laptop",
+  "result_count": 3,
+  "products": [
+    {
+      "id": 7,
+      "asin": "B09RMHD39Y",
+      "title": "ASUS ROG Strix G15 Gaming Laptop",
+      "price": 899.99,
+      "rating": 4.6,
+      "reviews": 3456,
+      "category": "Electronics > Computers > Laptops",
+      "availability": "In Stock"
+    },
+    {
+      "id": 8,
+      "asin": "B09SLKNXNT",
+      "title": "MSI Katana GF66 Gaming Laptop",
+      "price": 749.99,
+      "rating": 4.4,
+      "reviews": 2187,
+      "category": "Electronics > Computers > Laptops",
+      "availability": "In Stock"
+    },
+    {
+      "id": 9,
+      "asin": "B08VKY13MQ",
+      "title": "Acer Predator Helios 300 Gaming Laptop",
+      "price": 1199.99,
+      "rating": 4.3,
+      "reviews": 5634,
+      "category": "Electronics > Computers > Laptops",
+      "availability": "In Stock"
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+
+Test Case 7: Overall price statistics (global_statistics)
+Tool: get_price_statistics
+Parameters: {}
+ROUGE Scores: R-1=0.619, R-2=0.300, R-L=0.476
+Generation Time: 14.147s
+
+Generated Response:
+{
+  "product_count": 2212724,
+  "min_price": 0.01,
+  "max_price": 100000.0,
+  "avg_price": 94.26115575643416,
+  "avg_rating": 2.0361564750054684,
+  "category": "all"
+}
+
+Reference Response:
+{
+  "category": "all",
+  "product_count": 15674,
+  "min_price": 1.99,
+  "max_price": 2999.99,
+  "avg_price": 156.78,
+  "avg_rating": 4.0
+}
+--------------------------------------------------------------------------------
+
+Test Case 8: Price range search with sorting (price_range)
+Tool: search_products
+Parameters: {"query": "smartphone", "min_price": 200, "max_price": 500, "sort_by": "price_low", "limit": 4}
+ROUGE Scores: R-1=0.265, R-2=0.065, R-L=0.237
+Generation Time: 0.023s
+
+Generated Response:
+{
+  "query": "smartphone",
+  "result_count": 4,
+  "products": [
+    {
+      "id": 1983159,
+      "asin": "B094K3BXV2",
+      "title": "Samsung Galaxy A52 all carriers, 128GB, 5G Smartphone Dual SIM Android Mobile Phone Awesome Black (UK Version) (Renewed)",
+      "price": 200.0,
+      "rating": 4.4,
+      "num_ratings": 103,
+      "category": "Mobile Phones & Smartphones",
+      "url": "https://m.media-amazon.com/images/I/71MHyMyKEtL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/71MHyMyKEtL._AC_UL320_.jpg",
+      "description": "Samsung Galaxy A52 all carriers, 128GB, 5G Smartphone Dual SIM Android Mobile Phone Awesome Black (UK Version) (Renewed)",
+      "created_at": "2025-11-30 17:52:55"
+    },
+    {
+      "id": 1984677,
+      "asin": "B0BHJG1826",
+      "title": "Samsung Galaxy A53 5G Awesome White 6.5\" 128GB 5G Unlocked & SIM Free Smartphone (Renewed)",
+      "price": 200.0,
+      "rating": 3.9,
+      "num_ratings": 3,
+      "category": "Mobile Phones & Smartphones",
+      "url": "https://m.media-amazon.com/images/I/81FYt2eYf0L._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81FYt2eYf0L._AC_UL320_.jpg",
+      "description": "Samsung Galaxy A53 5G Awesome White 6.5\" 128GB 5G Unlocked & SIM Free Smartphone (Renewed)",
+      "created_at": "2025-11-30 17:52:56"
+    },
+    {
+      "id": 1986633,
+      "asin": "B004Q3QSWQ",
+      "title": "Samsung Galaxy S II Quad-Band Smartphone/HSDPA Bluetooth Android i9100G Black",
+      "price": 200.0,
+      "rating": 4.0,
+      "num_ratings": 1497,
+      "category": "Mobile Phones & Smartphones",
+      "url": "https://m.media-amazon.com/images/I/81kzd99zTIL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/81kzd99zTIL._AC_UL320_.jpg",
+      "description": "Samsung Galaxy S II Quad-Band Smartphone/HSDPA Bluetooth Android i9100G Black",
+      "created_at": "2025-11-30 17:52:56"
+    },
+    {
+      "id": 1987016,
+      "asin": "B01GHCICQS",
+      "title": "Samsung G930F Galaxy S7 32GB Pink Gold Smartphone",
+      "price": 200.0,
+      "rating": 4.4,
+      "num_ratings": 35,
+      "category": "Mobile Phones & Smartphones",
+      "url": "https://m.media-amazon.com/images/I/719KfgHqCtL._AC_UL320_.jpg",
+      "image_url": "https://m.media-amazon.com/images/I/719KfgHqCtL._AC_UL320_.jpg",
+      "description": "Samsung G930F Galaxy S7 32GB Pink Gold Smartphone",
+      "created_at": "2025-11-30 17:52:56"
+    }
+  ]
+}
+
+Reference Response:
+{
+  "query": "smartphone",
+  "result_count": 4,
+  "products": [
+    {
+      "id": 10,
+      "asin": "B09HJZPKMB",
+      "title": "Google Pixel 6a 5G Android Phone",
+      "price": 299.99,
+      "rating": 4.3,
+      "reviews": 8934,
+      "category": "Electronics > Mobile > Smartphones",
+      "availability": "In Stock"
+    },
+    {
+      "id": 11,
+      "asin": "B0BDJ7HBXY",
+      "title": "OnePlus Nord CE 3 5G Smartphone",
+      "price": 349.99,
+      "rating": 4.2,
+      "reviews": 4567,
+      "category": "Electronics > Mobile > Smartphones",
+      "availability": "In Stock"
+    },
+    {
+      "id": 12,
+      "asin": "B09R93CY26",
+      "title": "Samsung Galaxy A54 5G Android Smartphone",
+      "price": 389.99,
+      "rating": 4.1,
+      "reviews": 6789,
+      "category": "Electronics > Mobile > Smartphones",
+      "availability": "In Stock"
+    },
+    {
+      "id": 13,
+      "asin": "B0C4PLKX2Y",
+      "title": "Xiaomi Redmi Note 12 Pro Smartphone",
+      "price": 449.99,
+      "rating": 4.4,
+      "reviews": 3421,
+      "category": "Electronics > Mobile > Smartphones",
+      "availability": "In Stock"
+    }
+  ]
+}
+--------------------------------------------------------------------------------

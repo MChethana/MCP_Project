@@ -1,0 +1,239 @@
+{
+  "evaluation_metadata": {
+    "timestamp": "2025-12-07 22:26:21",
+    "total_test_cases": 8,
+    "system_type": "Live MCP Server"
+  },
+  "results": [
+    {
+      "test_case": {
+        "tool_name": "search_products",
+        "parameters": {
+          "query": "wireless headphones",
+          "max_price": 100,
+          "limit": 5
+        },
+        "reference_response": "{\n  \"query\": \"wireless headphones\",\n  \"result_count\": 5,\n  \"products\": [\n    {\n      \"id\": 1,\n      \"asin\": \"B08C4KWM9T\",\n      \"title\": \"Sony WH-CH720N Wireless Noise Canceling Headphones\",\n      \"price\": 89.99,\n      \"rating\": 4.4,\n      \"reviews\": 15234,\n      \"category\": \"Electronics > Audio > Headphones\",\n      \"availability\": \"In Stock\"\n    },\n    {\n      \"id\": 2,\n      \"asin\": \"B07S8VYV5K\",\n      \"title\": \"JBL Tune 510BT Wireless On-Ear Headphones\",\n      \"price\": 39.99,\n      \"rating\": 4.3,\n      \"reviews\": 8762,\n      \"category\": \"Electronics > Audio > Headphones\",\n      \"availability\": \"In Stock\"\n    },\n    {\n      \"id\": 3,\n      \"asin\": \"B0856JBVVF\",\n      \"title\": \"Anker Soundcore Life Q20 Hybrid Active Noise Cancelling Headphones\",\n      \"price\": 59.99,\n      \"rating\": 4.2,\n      \"reviews\": 22145,\n      \"category\": \"Electronics > Audio > Headphones\",\n      \"availability\": \"In Stock\"\n    }\n  ]\n}",
+        "description": "Product search with price filter",
+        "category": "search"
+      },
+      "generated_response": "{\n  \"query\": \"wireless headphones\",\n  \"result_count\": 5,\n  \"products\": [\n    {\n      \"id\": 1119148,\n      \"asin\": \"B0CG6N9LGR\",\n      \"title\": \"White Cat Ear Wireless Bluetooth LED Headphones, Kids wireless headphones, Childrens wireless headphones, Kids bluetooth earphones, Collapsible wireless headphones, Wireless headphones with microphone\",\n      \"price\": 17.99,\n      \"rating\": 0.0,\n      \"num_ratings\": 0,\n      \"category\": \"Headphones & Earphones\",\n      \"url\": \"https://m.media-amazon.com/images/I/41l54xFCf8L._AC_UL320_.jpg\",\n      \"image_url\": \"https://m.media-amazon.com/images/I/41l54xFCf8L._AC_UL320_.jpg\",\n      \"description\": \"White Cat Ear Wireless Bluetooth LED Headphones, Kids wireless headphones, Childrens wireless headphones, Kids bluetooth earphones, Collapsible wireless headphones, Wireless headphones with microphone\",\n      \"created_at\": \"2025-11-30 17:49:27\"\n    },\n    {\n      \"id\": 1566064,\n      \"asin\": \"B0BZDTZXZH\",\n      \"title\": \"Hama Freedom Buddy Bluetooth Headphones (True Wireless, TWS, In-Ear Headphones, Wireless Headphones, Wireless Bass Boost, Wireless Headphones, Earbuds, Voice Control, with Charging Box) Green\",\n      \"price\": 27.63,\n      \"rating\": 4.0,\n      \"num_ratings\": 2,\n      \"category\": \"Headphones, Earphones & Accessories\",\n      \"url\": \"https://m.media-amazon.com/images/I/31LKflg0bQL._AC_UL320_.jpg\",\n      \"image_url\": \"https://m.media-amazon.com/images/I/31LKflg0bQL._AC_UL320_.jpg\",\n      \"description\": \"Hama Freedom Buddy Bluetooth Headphones (True Wireless, TWS, In-Ear Headphones, Wireless Headphones, Wireless Bass Boost, Wireless Headphones, Earbuds, Voice Control, with Charging Box) Green\",\n      \"created_at\": \"2025-11-30 17:51:08\"\n    },\n    {\n      \"id\": 1566114,\n      \"asin\": \"B0BZDVTJ7S\",\n      \"title\": \"Hama Bluetooth Headphones Freedom Buddy (True Wireless, TWS, In-Ear Headphones, Wireless Headphones, Wireless Bass Boost, Headphones Wireless, Earbuds, Voice Control, with Charging Box) Blue\",\n      \"price\": 24.65,\n      \"rating\": 4.0,\n      \"num_ratings\": 2,\n      \"category\": \"Headphones, Earphones & Accessories\",\n      \"url\": \"https://m.media-amazon.com/images/I/41sJZLHFJmL._AC_UL320_.jpg\",\n      \"image_url\": \"https://m.media-amazon.com/images/I/41sJZLHFJmL._AC_UL320_.jpg\",\n      \"description\": \"Hama Bluetooth Headphones Freedom Buddy (True Wireless, TWS, In-Ear Headphones, Wireless Headphones, Wireless Bass Boost, Headphones Wireless, Earbuds, Voice Control, with Charging Box) Blue\",\n      \"created_at\": \"2025-11-30 17:51:08\"\n    },\n    {\n      \"id\": 1051477,\n      \"asin\": \"B094W6J3RC\",\n      \"title\": \"HEALLILY Wireless Headphones Wireless Headphones 2 Pairs Radio Ear Mold Earmold Replacement Earpiece Insert for Acoustic Coil Tube Earbud M Size Headphones Wireless Headphones Wireless\",\n      \"price\": 8.47,\n      \"rating\": 0.0,\n      \"num_ratings\": 0,\n      \"category\": \"Radio Communication\",\n      \"url\": \"https://m.media-amazon.com/images/I/612LeJ0LVNL._AC_UY218_.jpg\",\n      \"image_url\": \"https://m.media-amazon.com/images/I/612LeJ0LVNL._AC_UY218_.jpg\",\n      \"description\": \"HEALLILY Wireless Headphones Wireless Headphones 2 Pairs Radio Ear Mold Earmold Replacement Earpiece Insert for Acoustic Coil Tube Earbud M Size Headphones Wireless Headphones Wireless\",\n      \"created_at\": \"2025-11-30 17:49:12\"\n    },\n    {\n      \"id\": 950570,\n      \"asin\": \"B09BVJ9ZRL\",\n      \"title\": \"DOITOOL Wireless Headphones Headphones Headband Wireless Sports Headband Earphone Noise Cancelling Sleeping Headphones Earbuds for Workout Running Yoga Travel Grey Headphones Wireless\",\n      \"price\": 15.36,\n      \"rating\": 0.0,\n      \"num_ratings\": 0,\n      \"category\": \"Sports & Outdoors\",\n      \"url\": \"https://m.media-amazon.com/images/I/81nyyyHeNIL._AC_UL320_.jpg\",\n      \"image_url\": \"https://m.media-amazon.com/images/I/81nyyyHeNIL._AC_UL320_.jpg\",\n      \"description\": \"DOITOOL Wireless Headphones Headphones Headband Wireless Sports Headband Earphone Noise Cancelling Sleeping Headphones Earbuds for Workout Running Yoga Travel Grey Headphones Wireless\",\n      \"created_at\": \"2025-11-30 17:48:55\"\n    }\n  ]\n}",
+      "rouge_scores": {
+        "rouge_1_f": 0.15488215488215487,
+        "rouge_1_p": 0.09126984126984126,
+        "rouge_1_r": 0.5111111111111111,
+        "rouge_2_f": 0.04391891891891892,
+        "rouge_2_p": 0.02584493041749503,
+        "rouge_2_r": 0.14606741573033707,
+        "rouge_l_f": 0.13804713804713806,
+        "rouge_l_p": 0.08134920634920635,
+        "rouge_l_r": 0.45555555555555555
+      },
+      "generation_time": 1.4630768299102783
+    },
+    {
+      "test_case": {
+        "tool_name": "get_product_details",
+        "parameters": {
+          "asin": "B08C4KWM9T"
+        },
+        "reference_response": "{\n  \"id\": 1,\n  \"asin\": \"B08C4KWM9T\",\n  \"title\": \"Sony WH-CH720N Wireless Noise Canceling Headphones\",\n  \"price\": 89.99,\n  \"rating\": 4.4,\n  \"reviews\": 15234,\n  \"category\": \"Electronics > Audio > Headphones\",\n  \"availability\": \"In Stock\",\n  \"description\": \"Experience premium sound quality with Sony's advanced noise canceling technology. Features 35-hour battery life, quick charge, and comfortable over-ear design perfect for long listening sessions.\",\n  \"features\": [\n    \"Active Noise Cancellation\",\n    \"35-hour battery life\",\n    \"Quick charge (3 min = 1 hour)\",\n    \"Wireless Bluetooth 5.0\",\n    \"Comfortable over-ear design\"\n  ],\n  \"dimensions\": \"7.87 x 2.76 x 9.84 inches\",\n  \"weight\": \"192g\"\n}",
+        "description": "Single product detail retrieval",
+        "category": "product_details"
+      },
+      "generated_response": "{\"error\": \"Product B08C4KWM9T not found\"}",
+      "rouge_scores": {
+        "rouge_1_f": 0.021052631578947368,
+        "rouge_1_p": 0.2,
+        "rouge_1_r": 0.011111111111111112,
+        "rouge_2_f": 0.0,
+        "rouge_2_p": 0.0,
+        "rouge_2_r": 0.0,
+        "rouge_l_f": 0.021052631578947368,
+        "rouge_l_p": 0.2,
+        "rouge_l_r": 0.011111111111111112
+      },
+      "generation_time": 0.0
+    },
+    {
+      "test_case": {
+        "tool_name": "get_categories",
+        "parameters": {
+          "limit": 10
+        },
+        "reference_response": "{\n  \"total_categories\": 10,\n  \"categories\": [\n    {\n      \"category\": \"Electronics > Audio > Headphones\",\n      \"product_count\": 2341\n    },\n    {\n      \"category\": \"Electronics > Computers > Laptops\",\n      \"product_count\": 1876\n    },\n    {\n      \"category\": \"Electronics > Mobile > Smartphones\",\n      \"product_count\": 1654\n    },\n    {\n      \"category\": \"Home & Garden > Smart Home\",\n      \"product_count\": 1432\n    },\n    {\n      \"category\": \"Electronics > Gaming > Consoles\",\n      \"product_count\": 987\n    },\n    {\n      \"category\": \"Electronics > Audio > Speakers\",\n      \"product_count\": 876\n    },\n    {\n      \"category\": \"Electronics > Cameras > Digital\",\n      \"product_count\": 743\n    },\n    {\n      \"category\": \"Electronics > Tablets\",\n      \"product_count\": 621\n    },\n    {\n      \"category\": \"Electronics > Wearable Tech\",\n      \"product_count\": 534\n    },\n    {\n      \"category\": \"Home & Kitchen > Appliances\",\n      \"product_count\": 456\n    }\n  ]\n}",
+        "description": "Category listing with counts",
+        "category": "categories"
+      },
+      "generated_response": "{\n  \"total_categories\": 10,\n  \"categories\": [\n    {\n      \"category\": \"Sports & Outdoors\",\n      \"product_count\": 826076\n    },\n    {\n      \"category\": \"Skin Care\",\n      \"product_count\": 18755\n    },\n    {\n      \"category\": \"Fragrances\",\n      \"product_count\": 18563\n    },\n    {\n      \"category\": \"Make-up\",\n      \"product_count\": 18453\n    },\n    {\n      \"category\": \"Manicure & Pedicure Products\",\n      \"product_count\": 17212\n    },\n    {\n      \"category\": \"Handmade Clothing, Shoes & Accessories\",\n      \"product_count\": 16707\n    },\n    {\n      \"category\": \"Men\",\n      \"product_count\": 16384\n    },\n    {\n      \"category\": \"Women\",\n      \"product_count\": 16284\n    },\n    {\n      \"category\": \"Handmade Gifts\",\n      \"product_count\": 15790\n    },\n    {\n      \"category\": \"Handmade Artwork\",\n      \"product_count\": 15297\n    }\n  ]\n}",
+      "rouge_scores": {
+        "rouge_1_f": 0.4927536231884059,
+        "rouge_1_p": 0.53125,
+        "rouge_1_r": 0.4594594594594595,
+        "rouge_2_f": 0.20588235294117646,
+        "rouge_2_p": 0.2222222222222222,
+        "rouge_2_r": 0.1917808219178082,
+        "rouge_l_f": 0.4927536231884059,
+        "rouge_l_p": 0.53125,
+        "rouge_l_r": 0.4594594594594595
+      },
+      "generation_time": 0.16664838790893555
+    },
+    {
+      "test_case": {
+        "tool_name": "get_recommendations",
+        "parameters": {
+          "asin": "B08C4KWM9T",
+          "limit": 3
+        },
+        "reference_response": "{\n  \"source_product\": \"B08C4KWM9T\",\n  \"recommendation_count\": 3,\n  \"recommendations\": [\n    {\n      \"id\": 4,\n      \"asin\": \"B0856JBVVF\",\n      \"title\": \"Anker Soundcore Life Q20 Hybrid Active Noise Cancelling Headphones\",\n      \"price\": 59.99,\n      \"rating\": 4.2,\n      \"reviews\": 22145,\n      \"category\": \"Electronics > Audio > Headphones\",\n      \"availability\": \"In Stock\"\n    },\n    {\n      \"id\": 5,\n      \"asin\": \"B07S8VYV5K\",\n      \"title\": \"JBL Tune 510BT Wireless On-Ear Headphones\",\n      \"price\": 39.99,\n      \"rating\": 4.3,\n      \"reviews\": 8762,\n      \"category\": \"Electronics > Audio > Headphones\",\n      \"availability\": \"In Stock\"\n    },\n    {\n      \"id\": 6,\n      \"asin\": \"B08HMWZBXC\",\n      \"title\": \"Bose QuietComfort 35 II Wireless Bluetooth Headphones\",\n      \"price\": 199.99,\n      \"rating\": 4.5,\n      \"reviews\": 18903,\n      \"category\": \"Electronics > Audio > Headphones\",\n      \"availability\": \"In Stock\"\n    }\n  ]\n}",
+        "description": "Product recommendations based on similarity",
+        "category": "recommendations"
+      },
+      "generated_response": "{\"error\": \"Product B08C4KWM9T not found\"}",
+      "rouge_scores": {
+        "rouge_1_f": 0.042105263157894736,
+        "rouge_1_p": 0.4,
+        "rouge_1_r": 0.022222222222222223,
+        "rouge_2_f": 0.02150537634408602,
+        "rouge_2_p": 0.25,
+        "rouge_2_r": 0.011235955056179775,
+        "rouge_l_f": 0.042105263157894736,
+        "rouge_l_p": 0.4,
+        "rouge_l_r": 0.022222222222222223
+      },
+      "generation_time": 0.0
+    },
+    {
+      "test_case": {
+        "tool_name": "get_price_statistics",
+        "parameters": {
+          "category": "headphones"
+        },
+        "reference_response": "{\n  \"category\": \"headphones\",\n  \"product_count\": 2341,\n  \"min_price\": 9.99,\n  \"max_price\": 549.99,\n  \"avg_price\": 87.45,\n  \"avg_rating\": 4.1\n}",
+        "description": "Price statistics for category",
+        "category": "statistics"
+      },
+      "generated_response": "{\n  \"product_count\": 13384,\n  \"min_price\": 0.01,\n  \"max_price\": 2059.0,\n  \"avg_price\": 38.56343395098625,\n  \"avg_rating\": 3.7714061566049013,\n  \"category\": \"headphones\"\n}",
+      "rouge_scores": {
+        "rouge_1_f": 0.5714285714285714,
+        "rouge_1_p": 0.5714285714285714,
+        "rouge_1_r": 0.5714285714285714,
+        "rouge_2_f": 0.3,
+        "rouge_2_p": 0.3,
+        "rouge_2_r": 0.3,
+        "rouge_l_f": 0.47619047619047616,
+        "rouge_l_p": 0.47619047619047616,
+        "rouge_l_r": 0.47619047619047616
+      },
+      "generation_time": 12.507190227508545
+    },
+    {
+      "test_case": {
+        "tool_name": "search_products",
+        "parameters": {
+          "query": "gaming laptop",
+          "category": "laptops",
+          "min_rating": 4.0,
+          "sort_by": "rating",
+          "limit": 3
+        },
+        "reference_response": "{\n  \"query\": \"gaming laptop\",\n  \"result_count\": 3,\n  \"products\": [\n    {\n      \"id\": 7,\n      \"asin\": \"B09RMHD39Y\",\n      \"title\": \"ASUS ROG Strix G15 Gaming Laptop\",\n      \"price\": 899.99,\n      \"rating\": 4.6,\n      \"reviews\": 3456,\n      \"category\": \"Electronics > Computers > Laptops\",\n      \"availability\": \"In Stock\"\n    },\n    {\n      \"id\": 8,\n      \"asin\": \"B09SLKNXNT\",\n      \"title\": \"MSI Katana GF66 Gaming Laptop\",\n      \"price\": 749.99,\n      \"rating\": 4.4,\n      \"reviews\": 2187,\n      \"category\": \"Electronics > Computers > Laptops\",\n      \"availability\": \"In Stock\"\n    },\n    {\n      \"id\": 9,\n      \"asin\": \"B08VKY13MQ\",\n      \"title\": \"Acer Predator Helios 300 Gaming Laptop\",\n      \"price\": 1199.99,\n      \"rating\": 4.3,\n      \"reviews\": 5634,\n      \"category\": \"Electronics > Computers > Laptops\",\n      \"availability\": \"In Stock\"\n    }\n  ]\n}",
+        "description": "Complex search with multiple filters",
+        "category": "complex_search"
+      },
+      "generated_response": "{\n  \"query\": \"gaming laptop\",\n  \"result_count\": 3,\n  \"products\": [\n    {\n      \"id\": 317367,\n      \"asin\": \"B0C4FF66TX\",\n      \"title\": \"Acer Nitro 5 AN515-58 15.6-inch Gaming Laptop - (Intel Core i7-12650H, 16 GB RAM, 1 TB SSD, NVIDIA GeForce RTX 4060 8G, 1920 x 1080 144Hz Display, Windows 11, Black)\",\n      \"price\": 1099.0,\n      \"rating\": 5.0,\n      \"num_ratings\": 2,\n      \"category\": \"Laptops\",\n      \"url\": \"https://m.media-amazon.com/images/I/81tQqVir52L._AC_UL320_.jpg\",\n      \"image_url\": \"https://m.media-amazon.com/images/I/81tQqVir52L._AC_UL320_.jpg\",\n      \"description\": \"Acer Nitro 5 AN515-58 15.6-inch Gaming Laptop - (Intel Core i7-12650H, 16 GB RAM, 1 TB SSD, NVIDIA GeForce RTX 4060 8G, 1920 x 1080 144Hz Display, Windows 11, Black)\",\n      \"created_at\": \"2025-11-30 17:47:02\"\n    },\n    {\n      \"id\": 317484,\n      \"asin\": \"B0BY1PQ9P8\",\n      \"title\": \"HoMei 64GB DDR5 RAM, 4TB M.2 PCIe SSD, 2TB HDD, 14 Cores 13th Gen Intel Core i9-13900H 5.40GHz Gaming Laptop, 17.3\\\" 2.5K QHD 165Hz Display, GeForce RTX 4070 8GB GDDR6 Dedicated Graphics\",\n      \"price\": 2258.88,\n      \"rating\": 5.0,\n      \"num_ratings\": 2,\n      \"category\": \"Laptops\",\n      \"url\": \"https://m.media-amazon.com/images/I/61KpHXHDIVL._AC_UL320_.jpg\",\n      \"image_url\": \"https://m.media-amazon.com/images/I/61KpHXHDIVL._AC_UL320_.jpg\",\n      \"description\": \"HoMei 64GB DDR5 RAM, 4TB M.2 PCIe SSD, 2TB HDD, 14 Cores 13th Gen Intel Core i9-13900H 5.40GHz Gaming Laptop, 17.3\\\" 2.5K QHD 165Hz Display, GeForce RTX 4070 8GB GDDR6 Dedicated Graphics\",\n      \"created_at\": \"2025-11-30 17:47:02\"\n    },\n    {\n      \"id\": 317491,\n      \"asin\": \"B0C4FFGTMW\",\n      \"title\": \"Acer Nitro 17 AN17-51 17.3-inch Gaming Laptop - (Intel Core i7-13700H, 16 GB RAM, 1 TB SSD, NVIDIA GeForce RTX 4060 8G, 2560 x 1440 165Hz Display, Windows 11, Black)\",\n      \"price\": 1299.97,\n      \"rating\": 5.0,\n      \"num_ratings\": 1,\n      \"category\": \"Laptops\",\n      \"url\": \"https://m.media-amazon.com/images/I/81ynJP6X5sL._AC_UL320_.jpg\",\n      \"image_url\": \"https://m.media-amazon.com/images/I/81ynJP6X5sL._AC_UL320_.jpg\",\n      \"description\": \"Acer Nitro 17 AN17-51 17.3-inch Gaming Laptop - (Intel Core i7-13700H, 16 GB RAM, 1 TB SSD, NVIDIA GeForce RTX 4060 8G, 2560 x 1440 165Hz Display, Windows 11, Black)\",\n      \"created_at\": \"2025-11-30 17:47:02\"\n    }\n  ]\n}",
+      "rouge_scores": {
+        "rouge_1_f": 0.16554809843400448,
+        "rouge_1_p": 0.10192837465564739,
+        "rouge_1_r": 0.44047619047619047,
+        "rouge_2_f": 0.049438202247191004,
+        "rouge_2_p": 0.03038674033149171,
+        "rouge_2_r": 0.13253012048192772,
+        "rouge_l_f": 0.15659955257270694,
+        "rouge_l_p": 0.09641873278236915,
+        "rouge_l_r": 0.4166666666666667
+      },
+      "generation_time": 0.0004782676696777344
+    },
+    {
+      "test_case": {
+        "tool_name": "get_price_statistics",
+        "parameters": {},
+        "reference_response": "{\n  \"category\": \"all\",\n  \"product_count\": 15674,\n  \"min_price\": 1.99,\n  \"max_price\": 2999.99,\n  \"avg_price\": 156.78,\n  \"avg_rating\": 4.0\n}",
+        "description": "Overall price statistics",
+        "category": "global_statistics"
+      },
+      "generated_response": "{\n  \"product_count\": 2212724,\n  \"min_price\": 0.01,\n  \"max_price\": 100000.0,\n  \"avg_price\": 94.26115575643416,\n  \"avg_rating\": 2.0361564750054684,\n  \"category\": \"all\"\n}",
+      "rouge_scores": {
+        "rouge_1_f": 0.6190476190476191,
+        "rouge_1_p": 0.6190476190476191,
+        "rouge_1_r": 0.6190476190476191,
+        "rouge_2_f": 0.3,
+        "rouge_2_p": 0.3,
+        "rouge_2_r": 0.3,
+        "rouge_l_f": 0.47619047619047616,
+        "rouge_l_p": 0.47619047619047616,
+        "rouge_l_r": 0.47619047619047616
+      },
+      "generation_time": 14.14669418334961
+    },
+    {
+      "test_case": {
+        "tool_name": "search_products",
+        "parameters": {
+          "query": "smartphone",
+          "min_price": 200,
+          "max_price": 500,
+          "sort_by": "price_low",
+          "limit": 4
+        },
+        "reference_response": "{\n  \"query\": \"smartphone\",\n  \"result_count\": 4,\n  \"products\": [\n    {\n      \"id\": 10,\n      \"asin\": \"B09HJZPKMB\",\n      \"title\": \"Google Pixel 6a 5G Android Phone\",\n      \"price\": 299.99,\n      \"rating\": 4.3,\n      \"reviews\": 8934,\n      \"category\": \"Electronics > Mobile > Smartphones\",\n      \"availability\": \"In Stock\"\n    },\n    {\n      \"id\": 11,\n      \"asin\": \"B0BDJ7HBXY\",\n      \"title\": \"OnePlus Nord CE 3 5G Smartphone\",\n      \"price\": 349.99,\n      \"rating\": 4.2,\n      \"reviews\": 4567,\n      \"category\": \"Electronics > Mobile > Smartphones\",\n      \"availability\": \"In Stock\"\n    },\n    {\n      \"id\": 12,\n      \"asin\": \"B09R93CY26\",\n      \"title\": \"Samsung Galaxy A54 5G Android Smartphone\",\n      \"price\": 389.99,\n      \"rating\": 4.1,\n      \"reviews\": 6789,\n      \"category\": \"Electronics > Mobile > Smartphones\",\n      \"availability\": \"In Stock\"\n    },\n    {\n      \"id\": 13,\n      \"asin\": \"B0C4PLKX2Y\",\n      \"title\": \"Xiaomi Redmi Note 12 Pro Smartphone\",\n      \"price\": 449.99,\n      \"rating\": 4.4,\n      \"reviews\": 3421,\n      \"category\": \"Electronics > Mobile > Smartphones\",\n      \"availability\": \"In Stock\"\n    }\n  ]\n}",
+        "description": "Price range search with sorting",
+        "category": "price_range"
+      },
+      "generated_response": "{\n  \"query\": \"smartphone\",\n  \"result_count\": 4,\n  \"products\": [\n    {\n      \"id\": 1983159,\n      \"asin\": \"B094K3BXV2\",\n      \"title\": \"Samsung Galaxy A52 all carriers, 128GB, 5G Smartphone Dual SIM Android Mobile Phone Awesome Black (UK Version) (Renewed)\",\n      \"price\": 200.0,\n      \"rating\": 4.4,\n      \"num_ratings\": 103,\n      \"category\": \"Mobile Phones & Smartphones\",\n      \"url\": \"https://m.media-amazon.com/images/I/71MHyMyKEtL._AC_UL320_.jpg\",\n      \"image_url\": \"https://m.media-amazon.com/images/I/71MHyMyKEtL._AC_UL320_.jpg\",\n      \"description\": \"Samsung Galaxy A52 all carriers, 128GB, 5G Smartphone Dual SIM Android Mobile Phone Awesome Black (UK Version) (Renewed)\",\n      \"created_at\": \"2025-11-30 17:52:55\"\n    },\n    {\n      \"id\": 1984677,\n      \"asin\": \"B0BHJG1826\",\n      \"title\": \"Samsung Galaxy A53 5G Awesome White 6.5\\\" 128GB 5G Unlocked & SIM Free Smartphone (Renewed)\",\n      \"price\": 200.0,\n      \"rating\": 3.9,\n      \"num_ratings\": 3,\n      \"category\": \"Mobile Phones & Smartphones\",\n      \"url\": \"https://m.media-amazon.com/images/I/81FYt2eYf0L._AC_UL320_.jpg\",\n      \"image_url\": \"https://m.media-amazon.com/images/I/81FYt2eYf0L._AC_UL320_.jpg\",\n      \"description\": \"Samsung Galaxy A53 5G Awesome White 6.5\\\" 128GB 5G Unlocked & SIM Free Smartphone (Renewed)\",\n      \"created_at\": \"2025-11-30 17:52:56\"\n    },\n    {\n      \"id\": 1986633,\n      \"asin\": \"B004Q3QSWQ\",\n      \"title\": \"Samsung Galaxy S II Quad-Band Smartphone/HSDPA Bluetooth Android i9100G Black\",\n      \"price\": 200.0,\n      \"rating\": 4.0,\n      \"num_ratings\": 1497,\n      \"category\": \"Mobile Phones & Smartphones\",\n      \"url\": \"https://m.media-amazon.com/images/I/81kzd99zTIL._AC_UL320_.jpg\",\n      \"image_url\": \"https://m.media-amazon.com/images/I/81kzd99zTIL._AC_UL320_.jpg\",\n      \"description\": \"Samsung Galaxy S II Quad-Band Smartphone/HSDPA Bluetooth Android i9100G Black\",\n      \"created_at\": \"2025-11-30 17:52:56\"\n    },\n    {\n      \"id\": 1987016,\n      \"asin\": \"B01GHCICQS\",\n      \"title\": \"Samsung G930F Galaxy S7 32GB Pink Gold Smartphone\",\n      \"price\": 200.0,\n      \"rating\": 4.4,\n      \"num_ratings\": 35,\n      \"category\": \"Mobile Phones & Smartphones\",\n      \"url\": \"https://m.media-amazon.com/images/I/719KfgHqCtL._AC_UL320_.jpg\",\n      \"image_url\": \"https://m.media-amazon.com/images/I/719KfgHqCtL._AC_UL320_.jpg\",\n      \"description\": \"Samsung G930F Galaxy S7 32GB Pink Gold Smartphone\",\n      \"created_at\": \"2025-11-30 17:52:56\"\n    }\n  ]\n}",
+      "rouge_scores": {
+        "rouge_1_f": 0.2651162790697674,
+        "rouge_1_p": 0.178125,
+        "rouge_1_r": 0.5181818181818182,
+        "rouge_2_f": 0.06542056074766356,
+        "rouge_2_p": 0.0438871473354232,
+        "rouge_2_r": 0.12844036697247707,
+        "rouge_l_f": 0.23720930232558135,
+        "rouge_l_p": 0.159375,
+        "rouge_l_r": 0.4636363636363636
+      },
+      "generation_time": 0.02261066436767578
+    }
+  ],
+  "aggregate_stats": {
+    "rouge_1_f": {
+      "mean": 0.29149178009842064,
+      "median": 0.21533218875188595,
+      "std": 0.2380619366722526,
+      "min": 0.021052631578947368,
+      "max": 0.6190476190476191
+    },
+    "rouge_2_f": {
+      "mean": 0.12327067639987949,
+      "median": 0.05742938149742728,
+      "std": 0.1253210757743057,
+      "min": 0.0,
+      "max": 0.3
+    },
+    "rouge_l_f": {
+      "mean": 0.25501855790645334,
+      "median": 0.19690442744914416,
+      "std": 0.19932382309110927,
+      "min": 0.021052631578947368,
+      "max": 0.4927536231884059
+    },
+    "generation_time": {
+      "mean": 3.53833732008934,
+      "median": 0.09462952613830566,
+      "std": 6.077699197472474,
+      "total": 28.30669856071472
+    }
+  }
+}
